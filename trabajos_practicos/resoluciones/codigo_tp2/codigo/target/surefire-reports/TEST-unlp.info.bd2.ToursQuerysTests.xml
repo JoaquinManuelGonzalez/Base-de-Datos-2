@@ -1,0 +1,4318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="unlp.info.bd2.ToursQuerysTests" time="3.051" tests="11" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Usuario\Desktop\FACULTAD\5to_Año\primer_semestre\base_de_datos_2\trabajos_practicos\resoluciones\codigo_tp2\tp-bbdd2-tours\target\test-classes;C:\Users\Usuario\Desktop\FACULTAD\5to_Año\primer_semestre\base_de_datos_2\trabajos_practicos\resoluciones\codigo_tp2\tp-bbdd2-tours\target\classes;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.3\spring-boot-starter-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot\3.2.3\spring-boot-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-context\6.1.4\spring-context-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-expression\6.1.4\spring-expression-6.1.4.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-observation\1.12.3\micrometer-observation-1.12.3.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-commons\1.12.3\micrometer-commons-1.12.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.3\spring-boot-autoconfigure-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.3\spring-boot-starter-logging-3.2.3.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Usuario\.m2\repository\org\slf4j\jul-to-slf4j\2.0.12\jul-to-slf4j-2.0.12.jar;C:\Users\Usuario\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-core\6.1.4\spring-core-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jcl\6.1.4\spring-jcl-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.3\spring-boot-starter-data-jpa-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.3\spring-boot-starter-aop-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-aop\6.1.4\spring-aop-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.3\spring-boot-starter-jdbc-3.2.3.jar;C:\Users\Usuario\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jdbc\6.1.4\spring-jdbc-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\Usuario\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Usuario\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Usuario\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\Usuario\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\Usuario\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Usuario\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\Usuario\.m2\repository\org\springframework\data\spring-data-jpa\3.2.3\spring-data-jpa-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\data\spring-data-commons\3.2.3\spring-data-commons-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-orm\6.1.4\spring-orm-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-tx\6.1.4\spring-tx-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-beans\6.1.4\spring-beans-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-aspects\6.1.4\spring-aspects-6.1.4.jar;C:\Users\Usuario\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.3\spring-boot-starter-test-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test\3.2.3\spring-boot-test-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.3\spring-boot-test-autoconfigure-3.2.3.jar;C:\Users\Usuario\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Usuario\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\Usuario\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Usuario\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\Usuario\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\Usuario\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Usuario\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Usuario\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Usuario\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\Usuario\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\Usuario\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Usuario\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-test\6.1.4\spring-test-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Buenos_Aires"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="AR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\Usuario\AppData\Local\Temp\surefire11087788329182642448\surefirebooter-20260419190236833_3.jar C:\Users\Usuario\AppData\Local\Temp\surefire11087788329182642448 2026-04-19T19-02-35_773-jvmRun1 surefire-20260419190236833_1tmp surefire_0-20260419190236833_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Usuario\Desktop\FACULTAD\5to_Año\primer_semestre\base_de_datos_2\trabajos_practicos\resoluciones\codigo_tp2\tp-bbdd2-tours\target\test-classes;C:\Users\Usuario\Desktop\FACULTAD\5to_Año\primer_semestre\base_de_datos_2\trabajos_practicos\resoluciones\codigo_tp2\tp-bbdd2-tours\target\classes;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.3\spring-boot-starter-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot\3.2.3\spring-boot-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-context\6.1.4\spring-context-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-expression\6.1.4\spring-expression-6.1.4.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-observation\1.12.3\micrometer-observation-1.12.3.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-commons\1.12.3\micrometer-commons-1.12.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.3\spring-boot-autoconfigure-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.3\spring-boot-starter-logging-3.2.3.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Usuario\.m2\repository\org\slf4j\jul-to-slf4j\2.0.12\jul-to-slf4j-2.0.12.jar;C:\Users\Usuario\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-core\6.1.4\spring-core-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jcl\6.1.4\spring-jcl-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.3\spring-boot-starter-data-jpa-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.3\spring-boot-starter-aop-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-aop\6.1.4\spring-aop-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.3\spring-boot-starter-jdbc-3.2.3.jar;C:\Users\Usuario\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jdbc\6.1.4\spring-jdbc-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\Usuario\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Usuario\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Usuario\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\Usuario\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\Usuario\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Usuario\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\Usuario\.m2\repository\org\springframework\data\spring-data-jpa\3.2.3\spring-data-jpa-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\data\spring-data-commons\3.2.3\spring-data-commons-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-orm\6.1.4\spring-orm-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-tx\6.1.4\spring-tx-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-beans\6.1.4\spring-beans-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-aspects\6.1.4\spring-aspects-6.1.4.jar;C:\Users\Usuario\.m2\repository\com\mysql\mysql-connector-j\8.3.0\mysql-connector-j-8.3.0.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.3\spring-boot-starter-test-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test\3.2.3\spring-boot-test-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.3\spring-boot-test-autoconfigure-3.2.3.jar;C:\Users\Usuario\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Usuario\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\Usuario\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Usuario\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\Usuario\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\Usuario\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Usuario\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Usuario\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Usuario\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\Usuario\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\Usuario\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Usuario\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-test\6.1.4\spring-test-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Usuario"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Usuario\Desktop\FACULTAD\5to_Año\primer_semestre\base_de_datos_2\trabajos_practicos\resoluciones\codigo_tp2\tp-bbdd2-tours"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\Usuario\AppData\Local\Temp\surefire11087788329182642448\surefirebooter-20260419190236833_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
+    <property name="user.name" value="Usuario"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Usuario\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Usuario\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="C:\Users\Usuario\Desktop\FACULTAD\5to_Año\primer_semestre\base_de_datos_2\trabajos_practicos\resoluciones\codigo_tp2\tp-bbdd2-tours"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="11004"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\PowerShell\7;c:\Users\Usuario\.vscode\extensions\vadimcn.vscode-lldb-1.12.0\bin;c:\Users\Usuario\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Usuario\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\Usuario\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Calibre2\;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7\;C:\apache-maven-3.9.14-bin\apache-maven-3.9.14\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Usuario\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Usuario\AppData\Local\Programs\Python\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Calibre2\;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7\;C:\apache-maven-3.9.14-bin\apache-maven-3.9.14\bin;;C:\Windows\System32;C:\Windows;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\PowerShell\7\;C:\Users\Usuario\AppData\Local\Microsoft\WindowsApps;C:\Users\Usuario\AppData\Local\Microsoft\WindowsApps\python.exe;C:\Users\Usuario\AppData\Local\Microsoft\WindowsApps\python3.exe;C:\Users\Usuario\AppData\Local\Programs\oh-my-posh;C:\Users\Usuario\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\Usuario\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="getAllPurchasesOfUsernameTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.344">
+    <system-out><![CDATA[2026-04-19T19:03:11.949-03:00  INFO 11004 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [unlp.info.bd2.ToursQuerysTests]: ToursQuerysTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-19T19:03:11.967-03:00  INFO 11004 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration unlp.info.bd2.ToursApplication for test class unlp.info.bd2.ToursQuerysTests
+2026-04-19T19:03:12.022-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        suppliers
+        (authorization_number, business_name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        suppliers
+        (authorization_number, business_name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.029-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        suppliers
+        (authorization_number, business_name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        suppliers
+        (authorization_number, business_name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.037-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        suppliers
+        (authorization_number, business_name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        suppliers
+        (authorization_number, business_name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.045-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        suppliers
+        (authorization_number, business_name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        suppliers
+        (authorization_number, business_name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.054-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        suppliers
+        (authorization_number, business_name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        suppliers
+        (authorization_number, business_name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.065-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.093-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.110-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.121-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.129-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.140-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.155-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.163-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.174-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.187-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.246-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.254-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.261-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.267-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.271-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.277-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.281-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.286-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.289-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.293-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.296-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.301-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.305-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.312-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.315-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.320-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.325-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.329-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.332-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.336-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+2026-04-19T19:03:12.340-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+2026-04-19T19:03:12.356-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+2026-04-19T19:03:12.376-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+2026-04-19T19:03:12.387-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+2026-04-19T19:03:12.401-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+2026-04-19T19:03:12.415-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+2026-04-19T19:03:12.433-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+2026-04-19T19:03:12.454-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+2026-04-19T19:03:12.464-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+2026-04-19T19:03:12.501-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+2026-04-19T19:03:12.522-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, expedient, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'DRIVER', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, expedient, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'DRIVER', ?)
+2026-04-19T19:03:12.536-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, expedient, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'DRIVER', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, expedient, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'DRIVER', ?)
+2026-04-19T19:03:12.555-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, expedient, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'DRIVER', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, expedient, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'DRIVER', ?)
+2026-04-19T19:03:12.567-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, expedient, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'DRIVER', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, expedient, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'DRIVER', ?)
+2026-04-19T19:03:12.578-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, education, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'TOUR_GUIDE', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, education, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'TOUR_GUIDE', ?)
+2026-04-19T19:03:12.592-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, education, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'TOUR_GUIDE', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, education, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'TOUR_GUIDE', ?)
+2026-04-19T19:03:12.606-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, education, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'TOUR_GUIDE', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, education, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'TOUR_GUIDE', ?)
+2026-04-19T19:03:12.617-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, education, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'TOUR_GUIDE', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phone_number, username, education, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'TOUR_GUIDE', ?)
+2026-04-19T19:03:12.654-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:12.675-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        routes
+        (max_number_users, name, price, total_km, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        routes
+        (max_number_users, name, price, total_km, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.680-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        routes
+        (max_number_users, name, price, total_km, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        routes
+        (max_number_users, name, price, total_km, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.686-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        routes
+        (max_number_users, name, price, total_km, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        routes
+        (max_number_users, name, price, total_km, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.690-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        routes
+        (max_number_users, name, price, total_km, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        routes
+        (max_number_users, name, price, total_km, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.695-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        routes
+        (max_number_users, name, price, total_km, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        routes
+        (max_number_users, name, price, total_km, id) 
+    values
+        (?, ?, ?, ?, ?)
+2026-04-19T19:03:12.700-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:12.705-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.709-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.713-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.716-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.719-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.723-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.727-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.731-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.735-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.739-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.743-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.747-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.750-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.755-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.759-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.763-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.766-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.769-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.773-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.776-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.779-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.784-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.787-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.791-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.795-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.799-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.803-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.806-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.810-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.814-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.817-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.821-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.825-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.830-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.833-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.838-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.841-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.845-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.849-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+2026-04-19T19:03:12.863-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:12.877-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:12.891-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:12.906-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:12.920-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:12.936-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:12.950-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:12.969-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:12.984-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:12.997-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.011-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.025-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.043-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.060-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.075-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.090-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.104-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.123-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.135-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.151-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.165-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.182-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.199-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.214-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.233-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.250-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.262-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.278-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.307-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.320-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.341-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.359-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.375-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.390-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.406-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.424-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.455-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+2026-04-19T19:03:13.467-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, total_price, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-04-19T19:03:13.524-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        next_val as id_val 
+    from
+        review_sequence for update
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        review_sequence for update
+2026-04-19T19:03:13.527-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        review_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    update
+        review_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+2026-04-19T19:03:13.622-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.628-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.633-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.637-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.641-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.669-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.675-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.678-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.680-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.683-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.686-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.689-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.693-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.696-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.712-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.717-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.721-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.724-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.727-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.730-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.733-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.741-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.746-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.749-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.754-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.758-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.764-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.771-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.780-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.785-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.789-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.794-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.802-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.808-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.813-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.819-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.823-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.828-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.834-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.838-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+2026-04-19T19:03:13.848-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.856-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.873-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.883-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.889-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.895-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.900-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.907-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.913-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.920-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.927-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.931-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.935-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.944-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.949-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.957-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.969-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:13.975-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        total_price=?,
+        user_id=? 
+    where
+        id=?
+2026-04-19T19:03:14.022-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        p1_0.total_price,
+        p1_0.user_id 
+    from
+        purchases p1_0 
+    left join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+            and (u1_0.active = 1) 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        p1_0.total_price,
+        p1_0.user_id 
+    from
+        purchases p1_0 
+    left join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+            and (u1_0.active = 1) 
+    where
+        u1_0.username=?
+2026-04-19T19:03:14.110-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+2026-04-19T19:03:14.125-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        services s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        services s1_0 
+    where
+        s1_0.id=?
+2026-04-19T19:03:14.149-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        services s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        services s1_0 
+    where
+        s1_0.id=?
+2026-04-19T19:03:14.164-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+2026-04-19T19:03:14.172-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        services s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        services s1_0 
+    where
+        s1_0.id=?
+2026-04-19T19:03:14.182-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+2026-04-19T19:03:14.193-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+2026-04-19T19:03:14.202-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+2026-04-19T19:03:14.209-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        services s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        services s1_0 
+    where
+        s1_0.id=?
+2026-04-19T19:03:14.219-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+2026-04-19T19:03:14.236-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        item_services isl1_0 
+    left join
+        services s1_0 
+            on s1_0.id=isl1_0.service_id 
+    where
+        isl1_0.purchase_id=?
+Hibernate: 
+    select
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        item_services isl1_0 
+    left join
+        services s1_0 
+            on s1_0.id=isl1_0.service_id 
+    where
+        isl1_0.purchase_id=?
+2026-04-19T19:03:14.243-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        item_services isl1_0 
+    left join
+        services s1_0 
+            on s1_0.id=isl1_0.service_id 
+    where
+        isl1_0.purchase_id=?
+Hibernate: 
+    select
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        item_services isl1_0 
+    left join
+        services s1_0 
+            on s1_0.id=isl1_0.service_id 
+    where
+        isl1_0.purchase_id=?
+2026-04-19T19:03:14.270-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        p1_0.total_price,
+        p1_0.user_id 
+    from
+        purchases p1_0 
+    left join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+            and (u1_0.active = 1) 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        p1_0.total_price,
+        p1_0.user_id 
+    from
+        purchases p1_0 
+    left join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+            and (u1_0.active = 1) 
+    where
+        u1_0.username=?
+2026-04-19T19:03:14.282-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.max_number_users,
+        r2_0.name,
+        r2_0.price,
+        r2_0.total_km,
+        p1_0.total_price,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+2026-04-19T19:03:14.308-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        p1_0.total_price,
+        p1_0.user_id 
+    from
+        purchases p1_0 
+    left join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+            and (u1_0.active = 1) 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        p1_0.total_price,
+        p1_0.user_id 
+    from
+        purchases p1_0 
+    left join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+            and (u1_0.active = 1) 
+    where
+        u1_0.username=?
+]]></system-out>
+  </testcase>
+  <testcase name="getRoutesWithStopTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.126">
+    <system-out><![CDATA[2026-04-19T19:03:14.371-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name 
+    from
+        stops s1_0 
+    where
+        s1_0.name like ? escape '\\'
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name 
+    from
+        stops s1_0 
+    where
+        s1_0.name like ? escape '\\'
+2026-04-19T19:03:14.384-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name 
+    from
+        stops s1_0 
+    where
+        s1_0.name like ? escape '\\'
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name 
+    from
+        stops s1_0 
+    where
+        s1_0.name like ? escape '\\'
+2026-04-19T19:03:14.395-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name 
+    from
+        stops s1_0 
+    where
+        s1_0.name like ? escape '\\'
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name 
+    from
+        stops s1_0 
+    where
+        s1_0.name like ? escape '\\'
+2026-04-19T19:03:14.424-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.max_number_users,
+        r1_0.name,
+        r1_0.price,
+        r1_0.total_km 
+    from
+        routes r1_0 
+    where
+        ? in (select
+            s1_0.stop_id 
+        from
+            route_stops s1_0 
+        where
+            r1_0.id=s1_0.route_id)
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.max_number_users,
+        r1_0.name,
+        r1_0.price,
+        r1_0.total_km 
+    from
+        routes r1_0 
+    where
+        ? in (select
+            s1_0.stop_id 
+        from
+            route_stops s1_0 
+        where
+            r1_0.id=s1_0.route_id)
+2026-04-19T19:03:14.440-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.max_number_users,
+        r1_0.name,
+        r1_0.price,
+        r1_0.total_km 
+    from
+        routes r1_0 
+    where
+        ? in (select
+            s1_0.stop_id 
+        from
+            route_stops s1_0 
+        where
+            r1_0.id=s1_0.route_id)
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.max_number_users,
+        r1_0.name,
+        r1_0.price,
+        r1_0.total_km 
+    from
+        routes r1_0 
+    where
+        ? in (select
+            s1_0.stop_id 
+        from
+            route_stops s1_0 
+        where
+            r1_0.id=s1_0.route_id)
+2026-04-19T19:03:14.453-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.max_number_users,
+        r1_0.name,
+        r1_0.price,
+        r1_0.total_km 
+    from
+        routes r1_0 
+    where
+        ? in (select
+            s1_0.stop_id 
+        from
+            route_stops s1_0 
+        where
+            r1_0.id=s1_0.route_id)
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.max_number_users,
+        r1_0.name,
+        r1_0.price,
+        r1_0.total_km 
+    from
+        routes r1_0 
+    where
+        ? in (select
+            s1_0.stop_id 
+        from
+            route_stops s1_0 
+        where
+            r1_0.id=s1_0.route_id)
+]]></system-out>
+  </testcase>
+  <testcase name="getMaxStopOfRoutesTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.039">
+    <system-out><![CDATA[2026-04-19T19:03:14.492-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        max((select
+            count(1) 
+        from
+            route_stops s1_0 
+        where
+            r1_0.id=s1_0.route_id)) 
+    from
+        routes r1_0
+Hibernate: 
+    select
+        max((select
+            count(1) 
+        from
+            route_stops s1_0 
+        where
+            r1_0.id=s1_0.route_id)) 
+    from
+        routes r1_0
+]]></system-out>
+  </testcase>
+  <testcase name="getTopNSuppliersInPurchasesTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.141">
+    <system-out><![CDATA[2026-04-19T19:03:14.626-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        s2_0.id,
+        s2_0.authorization_number,
+        s2_0.business_name 
+    from
+        services s1_0 
+    join
+        item_services isl1_0 
+            on s1_0.id=isl1_0.service_id 
+    join
+        suppliers s2_0 
+            on s2_0.id=s1_0.supplier_id 
+    group by
+        s2_0.id 
+    order by
+        count(isl1_0.purchase_id) desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        s2_0.id,
+        s2_0.authorization_number,
+        s2_0.business_name 
+    from
+        services s1_0 
+    join
+        item_services isl1_0 
+            on s1_0.id=isl1_0.service_id 
+    join
+        suppliers s2_0 
+            on s2_0.id=s1_0.supplier_id 
+    group by
+        s2_0.id 
+    order by
+        count(isl1_0.purchase_id) desc 
+    limit
+        ?, ?
+2026-04-19T19:03:14.636-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        s2_0.id,
+        s2_0.authorization_number,
+        s2_0.business_name 
+    from
+        services s1_0 
+    join
+        item_services isl1_0 
+            on s1_0.id=isl1_0.service_id 
+    join
+        suppliers s2_0 
+            on s2_0.id=s1_0.supplier_id 
+    group by
+        s2_0.id 
+    order by
+        count(isl1_0.purchase_id) desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        s2_0.id,
+        s2_0.authorization_number,
+        s2_0.business_name 
+    from
+        services s1_0 
+    join
+        item_services isl1_0 
+            on s1_0.id=isl1_0.service_id 
+    join
+        suppliers s2_0 
+            on s2_0.id=s1_0.supplier_id 
+    group by
+        s2_0.id 
+    order by
+        count(isl1_0.purchase_id) desc 
+    limit
+        ?, ?
+]]></system-out>
+  </testcase>
+  <testcase name="getRoutesNotSellTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.037">
+    <system-out><![CDATA[2026-04-19T19:03:14.674-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.max_number_users,
+        r1_0.name,
+        r1_0.price,
+        r1_0.total_km 
+    from
+        routes r1_0 
+    where
+        r1_0.id not in (select
+            distinct p1_0.route_id 
+        from
+            purchases p1_0)
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.max_number_users,
+        r1_0.name,
+        r1_0.price,
+        r1_0.total_km 
+    from
+        routes r1_0 
+    where
+        r1_0.id not in (select
+            distinct p1_0.route_id 
+        from
+            purchases p1_0)
+]]></system-out>
+  </testcase>
+  <testcase name="init" classname="unlp.info.bd2.ToursQuerysTests" time="0.018"/>
+  <testcase name="getUserSpendingMoreThanTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.056">
+    <system-out><![CDATA[2026-04-19T19:03:14.726-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        distinct u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        purchases p1_0 
+    join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+            and (u1_0.active = 1) 
+    where
+        p1_0.total_price>=?
+Hibernate: 
+    select
+        distinct u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        purchases p1_0 
+    join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+            and (u1_0.active = 1) 
+    where
+        p1_0.total_price>=?
+2026-04-19T19:03:14.743-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        distinct u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        purchases p1_0 
+    join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+            and (u1_0.active = 1) 
+    where
+        p1_0.total_price>=?
+Hibernate: 
+    select
+        distinct u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        purchases p1_0 
+    join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+            and (u1_0.active = 1) 
+    where
+        p1_0.total_price>=?
+2026-04-19T19:03:14.751-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        distinct u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        purchases p1_0 
+    join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+            and (u1_0.active = 1) 
+    where
+        p1_0.total_price>=?
+Hibernate: 
+    select
+        distinct u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        purchases p1_0 
+    join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+            and (u1_0.active = 1) 
+    where
+        p1_0.total_price>=?
+]]></system-out>
+  </testcase>
+  <testcase name="getMostDemandedServiceTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.049">
+    <system-out><![CDATA[2026-04-19T19:03:14.796-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        item_services is1_0 
+    join
+        services s1_0 
+            on s1_0.id=is1_0.service_id 
+    group by
+        s1_0.id 
+    order by
+        sum(is1_0.quantity) desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        item_services is1_0 
+    join
+        services s1_0 
+            on s1_0.id=is1_0.service_id 
+    group by
+        s1_0.id 
+    order by
+        sum(is1_0.quantity) desc 
+    limit
+        ?, ?
+]]></system-out>
+  </testcase>
+  <testcase name="getTourGuidesWithRating1Test" classname="unlp.info.bd2.ToursQuerysTests" time="0.053">
+    <system-out><![CDATA[2026-04-19T19:03:14.846-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        distinct tgl1_1.id,
+        tgl1_1.active,
+        tgl1_1.birthdate,
+        tgl1_1.email,
+        tgl1_1.name,
+        tgl1_1.password,
+        tgl1_1.phone_number,
+        tgl1_1.username,
+        tgl1_1.education 
+    from
+        purchases p1_0 
+    join
+        routes r1_0 
+            on r1_0.id=p1_0.route_id 
+    join
+        route_tour_guides tgl1_0 
+            on r1_0.id=tgl1_0.route_id 
+    join
+        (select
+            * 
+        from
+            users t 
+        where
+            t.user_type='TOUR_GUIDE') tgl1_1 
+            on tgl1_1.id=tgl1_0.tour_guide_id 
+    join
+        reviews r2_0 
+            on p1_0.id=r2_0.purchase_id 
+    where
+        r2_0.rating=1
+Hibernate: 
+    select
+        distinct tgl1_1.id,
+        tgl1_1.active,
+        tgl1_1.birthdate,
+        tgl1_1.email,
+        tgl1_1.name,
+        tgl1_1.password,
+        tgl1_1.phone_number,
+        tgl1_1.username,
+        tgl1_1.education 
+    from
+        purchases p1_0 
+    join
+        routes r1_0 
+            on r1_0.id=p1_0.route_id 
+    join
+        route_tour_guides tgl1_0 
+            on r1_0.id=tgl1_0.route_id 
+    join
+        (select
+            * 
+        from
+            users t 
+        where
+            t.user_type='TOUR_GUIDE') tgl1_1 
+            on tgl1_1.id=tgl1_0.tour_guide_id 
+    join
+        reviews r2_0 
+            on p1_0.id=r2_0.purchase_id 
+    where
+        r2_0.rating=1
+]]></system-out>
+  </testcase>
+  <testcase name="getTop3RoutesWithMaxRatingTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.052">
+    <system-out><![CDATA[2026-04-19T19:03:14.913-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.max_number_users,
+        r1_0.name,
+        r1_0.price,
+        r1_0.total_km 
+    from
+        purchases p1_0 
+    join
+        routes r1_0 
+            on r1_0.id=p1_0.route_id 
+    join
+        reviews r2_0 
+            on p1_0.id=r2_0.purchase_id 
+    where
+        r2_0.id is not null 
+    group by
+        r1_0.id 
+    order by
+        avg(r2_0.rating) desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.max_number_users,
+        r1_0.name,
+        r1_0.price,
+        r1_0.total_km 
+    from
+        purchases p1_0 
+    join
+        routes r1_0 
+            on r1_0.id=p1_0.route_id 
+    join
+        reviews r2_0 
+            on p1_0.id=r2_0.purchase_id 
+    where
+        r2_0.id is not null 
+    group by
+        r1_0.id 
+    order by
+        avg(r2_0.rating) desc 
+    limit
+        ?, ?
+]]></system-out>
+  </testcase>
+  <testcase name="getCountOfPurchasesBetweenDatesTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.052">
+    <system-out><![CDATA[2026-04-19T19:03:14.945-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.date between ? and ?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.date between ? and ?
+2026-04-19T19:03:14.955-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.date between ? and ?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.date between ? and ?
+2026-04-19T19:03:14.967-03:00 DEBUG 11004 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.date between ? and ?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.date between ? and ?
+]]></system-out>
+  </testcase>
+</testsuite>

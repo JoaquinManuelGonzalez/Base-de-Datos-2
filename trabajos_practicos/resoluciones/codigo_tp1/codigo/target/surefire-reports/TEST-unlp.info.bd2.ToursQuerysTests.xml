@@ -1,0 +1,2866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="unlp.info.bd2.ToursQuerysTests" time="13.739" tests="11" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Usuario\Desktop\FACULTAD\5to_Año\primer_semestre\base_de_datos_2\trabajos_practicos\resoluciones\codigo_tp1\tp-bbdd2-tours\target\test-classes;C:\Users\Usuario\Desktop\FACULTAD\5to_Año\primer_semestre\base_de_datos_2\trabajos_practicos\resoluciones\codigo_tp1\tp-bbdd2-tours\target\classes;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.3\spring-boot-starter-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot\3.2.3\spring-boot-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-context\6.1.4\spring-context-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-aop\6.1.4\spring-aop-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-expression\6.1.4\spring-expression-6.1.4.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-observation\1.12.3\micrometer-observation-1.12.3.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-commons\1.12.3\micrometer-commons-1.12.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.3\spring-boot-autoconfigure-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.3\spring-boot-starter-logging-3.2.3.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Usuario\.m2\repository\org\slf4j\jul-to-slf4j\2.0.12\jul-to-slf4j-2.0.12.jar;C:\Users\Usuario\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-core\6.1.4\spring-core-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jcl\6.1.4\spring-jcl-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-tx\6.1.4\spring-tx-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-beans\6.1.4\spring-beans-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-orm\6.1.4\spring-orm-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jdbc\6.1.4\spring-jdbc-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\hibernate\orm\hibernate-core\6.4.3.Final\hibernate-core-6.4.3.Final.jar;C:\Users\Usuario\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Usuario\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Usuario\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\Usuario\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\Usuario\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\Usuario\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\Usuario\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Usuario\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\Usuario\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.3\spring-boot-starter-test-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test\3.2.3\spring-boot-test-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.3\spring-boot-test-autoconfigure-3.2.3.jar;C:\Users\Usuario\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Usuario\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\Usuario\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\Usuario\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\Usuario\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Usuario\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Usuario\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Usuario\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\Usuario\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\Usuario\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Usuario\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-test\6.1.4\spring-test-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\Usuario\.m2\repository\commons-dbcp\commons-dbcp\1.4\commons-dbcp-1.4.jar;C:\Users\Usuario\.m2\repository\commons-pool\commons-pool\1.6\commons-pool-1.6.jar;C:\Users\Usuario\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\Usuario\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Buenos_Aires"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="AR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\Usuario\AppData\Local\Temp\surefire4469087262930662766\surefirebooter-20260419190009081_3.jar C:\Users\Usuario\AppData\Local\Temp\surefire4469087262930662766 2026-04-19T19-00-08_554-jvmRun1 surefire-20260419190009081_1tmp surefire_0-20260419190009081_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Usuario\Desktop\FACULTAD\5to_Año\primer_semestre\base_de_datos_2\trabajos_practicos\resoluciones\codigo_tp1\tp-bbdd2-tours\target\test-classes;C:\Users\Usuario\Desktop\FACULTAD\5to_Año\primer_semestre\base_de_datos_2\trabajos_practicos\resoluciones\codigo_tp1\tp-bbdd2-tours\target\classes;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.3\spring-boot-starter-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot\3.2.3\spring-boot-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-context\6.1.4\spring-context-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-aop\6.1.4\spring-aop-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-expression\6.1.4\spring-expression-6.1.4.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-observation\1.12.3\micrometer-observation-1.12.3.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-commons\1.12.3\micrometer-commons-1.12.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.3\spring-boot-autoconfigure-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.3\spring-boot-starter-logging-3.2.3.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Usuario\.m2\repository\org\slf4j\jul-to-slf4j\2.0.12\jul-to-slf4j-2.0.12.jar;C:\Users\Usuario\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-core\6.1.4\spring-core-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jcl\6.1.4\spring-jcl-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-tx\6.1.4\spring-tx-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-beans\6.1.4\spring-beans-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-orm\6.1.4\spring-orm-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jdbc\6.1.4\spring-jdbc-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\hibernate\orm\hibernate-core\6.4.3.Final\hibernate-core-6.4.3.Final.jar;C:\Users\Usuario\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Usuario\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Usuario\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\Usuario\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\Usuario\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\Usuario\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\Usuario\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Usuario\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\Usuario\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.3\spring-boot-starter-test-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test\3.2.3\spring-boot-test-3.2.3.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.3\spring-boot-test-autoconfigure-3.2.3.jar;C:\Users\Usuario\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Usuario\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\Usuario\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\Usuario\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\Usuario\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Usuario\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Usuario\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Usuario\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\Usuario\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\Usuario\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Usuario\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-test\6.1.4\spring-test-6.1.4.jar;C:\Users\Usuario\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\Usuario\.m2\repository\commons-dbcp\commons-dbcp\1.4\commons-dbcp-1.4.jar;C:\Users\Usuario\.m2\repository\commons-pool\commons-pool\1.6\commons-pool-1.6.jar;C:\Users\Usuario\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\Usuario\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Usuario"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Usuario\Desktop\FACULTAD\5to_Año\primer_semestre\base_de_datos_2\trabajos_practicos\resoluciones\codigo_tp1\tp-bbdd2-tours"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Usuario\AppData\Local\Temp\surefire4469087262930662766\surefirebooter-20260419190009081_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
+    <property name="user.name" value="Usuario"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Usuario\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Usuario\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="C:\Users\Usuario\Desktop\FACULTAD\5to_Año\primer_semestre\base_de_datos_2\trabajos_practicos\resoluciones\codigo_tp1\tp-bbdd2-tours"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\PowerShell\7;c:\Users\Usuario\.vscode\extensions\vadimcn.vscode-lldb-1.12.0\bin;c:\Users\Usuario\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Usuario\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\Usuario\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Calibre2\;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7\;C:\apache-maven-3.9.14-bin\apache-maven-3.9.14\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Usuario\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Usuario\AppData\Local\Programs\Python\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Calibre2\;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7\;C:\apache-maven-3.9.14-bin\apache-maven-3.9.14\bin;;C:\Windows\System32;C:\Windows;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\PowerShell\7\;C:\Users\Usuario\AppData\Local\Microsoft\WindowsApps;C:\Users\Usuario\AppData\Local\Microsoft\WindowsApps\python.exe;C:\Users\Usuario\AppData\Local\Microsoft\WindowsApps\python3.exe;C:\Users\Usuario\AppData\Local\Programs\oh-my-posh;C:\Users\Usuario\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\Usuario\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="getRoutsNotSellTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.276">
+    <system-out><![CDATA[19:00:36.569 [main] INFO org.hibernate.cache.internal.RegionFactoryInitiator -- HHH000026: Second-level cache disabled
+19:00:36.626 [main] WARN org.hibernate.orm.deprecation -- HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+19:00:38.934 [main] INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table item_services 
+       drop 
+       foreign key FKe7pdfp76d4vvib2n64ofqf98u
+Hibernate: 
+    alter table item_services 
+       drop 
+       foreign key FK98rwgufbj3hwt3627chq4r3uv
+Hibernate: 
+    alter table purchases 
+       drop 
+       foreign key FKb8a9x319ptkwr9xnu3imfwxkt
+Hibernate: 
+    alter table purchases 
+       drop 
+       foreign key FKm0ndjymn9p747pfp4515pio8i
+Hibernate: 
+    alter table reviews 
+       drop 
+       foreign key FKtlbpgfgpje3g0do3xdmry3y9j
+Hibernate: 
+    alter table route_drivers 
+       drop 
+       foreign key FKlarw210fd3wvynavtmcyofgxf
+Hibernate: 
+    alter table route_drivers 
+       drop 
+       foreign key FKbovlxo45trq2qh2668qfjrstj
+Hibernate: 
+    alter table route_stops 
+       drop 
+       foreign key FKjmssq6w9xpsvupp2x407s43i2
+Hibernate: 
+    alter table route_stops 
+       drop 
+       foreign key FK63y33daxb1qs5nbnkuicbpkej
+Hibernate: 
+    alter table route_tour_guides 
+       drop 
+       foreign key FK33dkhjoov8d86i27tni60fkbe
+Hibernate: 
+    alter table route_tour_guides 
+       drop 
+       foreign key FKaj9a5b81y31cpc1j5fn3aor4e
+Hibernate: 
+    alter table services 
+       drop 
+       foreign key FK16cnuanf4fntklkbbckymn8ky
+Hibernate: 
+    drop table if exists item_service_sequence
+Hibernate: 
+    drop table if exists item_services
+Hibernate: 
+    drop table if exists purchase_sequence
+Hibernate: 
+    drop table if exists purchases
+Hibernate: 
+    drop table if exists review_sequence
+Hibernate: 
+    drop table if exists reviews
+Hibernate: 
+    drop table if exists route_drivers
+Hibernate: 
+    drop table if exists route_sequence
+Hibernate: 
+    drop table if exists route_stops
+Hibernate: 
+    drop table if exists route_tour_guides
+Hibernate: 
+    drop table if exists routes
+Hibernate: 
+    drop table if exists service_sequence
+Hibernate: 
+    drop table if exists services
+Hibernate: 
+    drop table if exists stop_sequence
+Hibernate: 
+    drop table if exists stops
+Hibernate: 
+    drop table if exists supplier_sequence
+Hibernate: 
+    drop table if exists suppliers
+Hibernate: 
+    drop table if exists user_sequence
+Hibernate: 
+    drop table if exists users
+Hibernate: 
+    create table item_service_sequence (
+        next_val bigint
+    ) engine=InnoDB
+Hibernate: 
+    insert into item_service_sequence values ( 1 )
+Hibernate: 
+    create table item_services (
+        quantity integer not null,
+        id bigint not null,
+        purchase_id bigint not null,
+        service_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table purchase_sequence (
+        next_val bigint
+    ) engine=InnoDB
+Hibernate: 
+    insert into purchase_sequence values ( 1 )
+Hibernate: 
+    create table purchases (
+        totalPrice float(23) not null,
+        date datetime(6) not null,
+        id bigint not null,
+        route_id bigint not null,
+        user_id bigint not null,
+        code varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table review_sequence (
+        next_val bigint
+    ) engine=InnoDB
+Hibernate: 
+    insert into review_sequence values ( 1 )
+Hibernate: 
+    create table reviews (
+        rating integer not null,
+        id bigint not null,
+        purchase_id bigint not null,
+        comment varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table route_drivers (
+        driver_id bigint not null,
+        route_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    create table route_sequence (
+        next_val bigint
+    ) engine=InnoDB
+Hibernate: 
+    insert into route_sequence values ( 1 )
+Hibernate: 
+    create table route_stops (
+        route_id bigint not null,
+        stop_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    create table route_tour_guides (
+        route_id bigint not null,
+        tour_guide_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    create table routes (
+        maxNumberUsers integer not null,
+        price float(23) not null,
+        totalKm float(23) not null,
+        id bigint not null,
+        name varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table service_sequence (
+        next_val bigint
+    ) engine=InnoDB
+Hibernate: 
+    insert into service_sequence values ( 1 )
+Hibernate: 
+    create table services (
+        price float(23) not null,
+        id bigint not null,
+        supplier_id bigint,
+        name varchar(100) not null,
+        description varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table stop_sequence (
+        next_val bigint
+    ) engine=InnoDB
+Hibernate: 
+    insert into stop_sequence values ( 1 )
+Hibernate: 
+    create table stops (
+        id bigint not null,
+        description varchar(255),
+        name varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table supplier_sequence (
+        next_val bigint
+    ) engine=InnoDB
+Hibernate: 
+    insert into supplier_sequence values ( 1 )
+Hibernate: 
+    create table suppliers (
+        id bigint not null,
+        authorizationNumber varchar(255) not null,
+        businessName varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table user_sequence (
+        next_val bigint
+    ) engine=InnoDB
+Hibernate: 
+    insert into user_sequence values ( 1 )
+Hibernate: 
+    create table users (
+        active bit not null,
+        birthdate datetime(6),
+        id bigint not null,
+        user_type varchar(31) not null,
+        education varchar(255),
+        email varchar(255),
+        expedient varchar(255),
+        name varchar(255) not null,
+        password varchar(255) not null,
+        phoneNumber varchar(255),
+        username varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    alter table purchases 
+       add constraint UK_idp67y8emgudwcvj94r8chpf4 unique (code)
+Hibernate: 
+    alter table reviews 
+       add constraint UK_jfd0ugmaq72ipi087g9f158hs unique (purchase_id)
+Hibernate: 
+    alter table suppliers 
+       add constraint UK_b699v3k8236wnaxjc86510b8q unique (authorizationNumber)
+Hibernate: 
+    alter table users 
+       add constraint UK_r43af9ap4edm43mmtq01oddj6 unique (username)
+Hibernate: 
+    alter table item_services 
+       add constraint FKe7pdfp76d4vvib2n64ofqf98u 
+       foreign key (purchase_id) 
+       references purchases (id)
+Hibernate: 
+    alter table item_services 
+       add constraint FK98rwgufbj3hwt3627chq4r3uv 
+       foreign key (service_id) 
+       references services (id)
+Hibernate: 
+    alter table purchases 
+       add constraint FKb8a9x319ptkwr9xnu3imfwxkt 
+       foreign key (route_id) 
+       references routes (id)
+Hibernate: 
+    alter table purchases 
+       add constraint FKm0ndjymn9p747pfp4515pio8i 
+       foreign key (user_id) 
+       references users (id)
+Hibernate: 
+    alter table reviews 
+       add constraint FKtlbpgfgpje3g0do3xdmry3y9j 
+       foreign key (purchase_id) 
+       references purchases (id)
+Hibernate: 
+    alter table route_drivers 
+       add constraint FKlarw210fd3wvynavtmcyofgxf 
+       foreign key (driver_id) 
+       references users (id)
+Hibernate: 
+    alter table route_drivers 
+       add constraint FKbovlxo45trq2qh2668qfjrstj 
+       foreign key (route_id) 
+       references routes (id)
+Hibernate: 
+    alter table route_stops 
+       add constraint FKjmssq6w9xpsvupp2x407s43i2 
+       foreign key (stop_id) 
+       references stops (id)
+Hibernate: 
+    alter table route_stops 
+       add constraint FK63y33daxb1qs5nbnkuicbpkej 
+       foreign key (route_id) 
+       references routes (id)
+Hibernate: 
+    alter table route_tour_guides 
+       add constraint FK33dkhjoov8d86i27tni60fkbe 
+       foreign key (tour_guide_id) 
+       references users (id)
+Hibernate: 
+    alter table route_tour_guides 
+       add constraint FKaj9a5b81y31cpc1j5fn3aor4e 
+       foreign key (route_id) 
+       references routes (id)
+Hibernate: 
+    alter table services 
+       add constraint FK16cnuanf4fntklkbbckymn8ky 
+       foreign key (supplier_id) 
+       references suppliers (id)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        supplier_sequence for update
+Hibernate: 
+    update
+        supplier_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        suppliers
+        (authorizationNumber, businessName, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        supplier_sequence for update
+Hibernate: 
+    update
+        supplier_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        suppliers
+        (authorizationNumber, businessName, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        suppliers
+        (authorizationNumber, businessName, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        suppliers
+        (authorizationNumber, businessName, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        suppliers
+        (authorizationNumber, businessName, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        service_sequence for update
+Hibernate: 
+    update
+        service_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        service_sequence for update
+Hibernate: 
+    update
+        service_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        services
+        (description, name, price, supplier_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        stop_sequence for update
+Hibernate: 
+    update
+        stop_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        stop_sequence for update
+Hibernate: 
+    update
+        stop_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        user_sequence for update
+Hibernate: 
+    update
+        user_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        stops
+        (description, name, id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        user_sequence for update
+Hibernate: 
+    update
+        user_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, 'User', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, expedient, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'DRIVER', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, expedient, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'DRIVER', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, expedient, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'DRIVER', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, expedient, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'DRIVER', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, education, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'TOUR_GUIDE', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, education, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'TOUR_GUIDE', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, education, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'TOUR_GUIDE', ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (active, birthdate, email, name, password, phoneNumber, username, education, user_type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, 'TOUR_GUIDE', ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        route_sequence for update
+Hibernate: 
+    update
+        route_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        route_sequence for update
+Hibernate: 
+    update
+        route_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        purchase_sequence for update
+Hibernate: 
+    update
+        purchase_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        routes
+        (maxNumberUsers, name, price, totalKm, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        routes
+        (maxNumberUsers, name, price, totalKm, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        routes
+        (maxNumberUsers, name, price, totalKm, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        routes
+        (maxNumberUsers, name, price, totalKm, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        routes
+        (maxNumberUsers, name, price, totalKm, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_drivers
+        (route_id, driver_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_tour_guides
+        (route_id, tour_guide_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        route_stops
+        (route_id, stop_id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        purchase_sequence for update
+Hibernate: 
+    update
+        purchase_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.route_id=?
+Hibernate: 
+    insert 
+    into
+        purchases
+        (code, date, route_id, totalPrice, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        item_service_sequence for update
+Hibernate: 
+    update
+        item_service_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        item_service_sequence for update
+Hibernate: 
+    update
+        item_service_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        review_sequence for update
+Hibernate: 
+    update
+        review_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        review_sequence for update
+Hibernate: 
+    update
+        review_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        item_services
+        (purchase_id, quantity, service_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        reviews
+        (comment, purchase_id, rating, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    update
+        purchases 
+    set
+        code=?,
+        date=?,
+        route_id=?,
+        totalPrice=?,
+        user_id=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.maxNumberUsers,
+        r1_0.name,
+        r1_0.price,
+        r1_0.totalKm 
+    from
+        routes r1_0 
+    where
+        r1_0.id not in (select
+            distinct p1_0.route_id 
+        from
+            purchases p1_0)
+]]></system-out>
+  </testcase>
+  <testcase name="getAllPurchasesOfUsernameTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.222">
+    <system-out><![CDATA[Hibernate: 
+    select
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        p1_0.totalPrice,
+        p1_0.user_id 
+    from
+        purchases p1_0 
+    join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.maxNumberUsers,
+        r2_0.name,
+        r2_0.price,
+        r2_0.totalKm,
+        p1_0.totalPrice,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        services s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        services s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.maxNumberUsers,
+        r2_0.name,
+        r2_0.price,
+        r2_0.totalKm,
+        p1_0.totalPrice,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        services s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.maxNumberUsers,
+        r2_0.name,
+        r2_0.price,
+        r2_0.totalKm,
+        p1_0.totalPrice,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.maxNumberUsers,
+        r2_0.name,
+        r2_0.price,
+        r2_0.totalKm,
+        p1_0.totalPrice,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.maxNumberUsers,
+        r2_0.name,
+        r2_0.price,
+        r2_0.totalKm,
+        p1_0.totalPrice,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        services s1_0 
+    where
+        s1_0.id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.maxNumberUsers,
+        r2_0.name,
+        r2_0.price,
+        r2_0.totalKm,
+        p1_0.totalPrice,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        item_services isl1_0 
+    left join
+        services s1_0 
+            on s1_0.id=isl1_0.service_id 
+    where
+        isl1_0.purchase_id=?
+Hibernate: 
+    select
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        item_services isl1_0 
+    left join
+        services s1_0 
+            on s1_0.id=isl1_0.service_id 
+    where
+        isl1_0.purchase_id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        p1_0.totalPrice,
+        p1_0.user_id 
+    from
+        purchases p1_0 
+    join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.comment,
+        r1_0.purchase_id,
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        r2_0.id,
+        r2_0.maxNumberUsers,
+        r2_0.name,
+        r2_0.price,
+        r2_0.totalKm,
+        p1_0.totalPrice,
+        p1_0.user_id,
+        isl1_0.purchase_id,
+        isl1_0.id,
+        isl1_0.quantity,
+        isl1_0.service_id,
+        r1_0.rating 
+    from
+        reviews r1_0 
+    join
+        purchases p1_0 
+            on p1_0.id=r1_0.purchase_id 
+    left join
+        routes r2_0 
+            on r2_0.id=p1_0.route_id 
+    left join
+        item_services isl1_0 
+            on p1_0.id=isl1_0.purchase_id 
+    where
+        r1_0.purchase_id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.code,
+        p1_0.date,
+        p1_0.route_id,
+        p1_0.totalPrice,
+        p1_0.user_id 
+    from
+        purchases p1_0 
+    join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+    where
+        u1_0.username=?
+]]></system-out>
+  </testcase>
+  <testcase name="getRoutesWithStopTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.1">
+    <system-out><![CDATA[Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name 
+    from
+        stops s1_0 
+    where
+        s1_0.name like ? escape ''
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name 
+    from
+        stops s1_0 
+    where
+        s1_0.name like ? escape ''
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name 
+    from
+        stops s1_0 
+    where
+        s1_0.name like ? escape ''
+Hibernate: 
+    select
+        distinct r1_0.id,
+        r1_0.maxNumberUsers,
+        r1_0.name,
+        r1_0.price,
+        r1_0.totalKm 
+    from
+        routes r1_0 
+    join
+        route_stops s1_0 
+            on r1_0.id=s1_0.route_id 
+    join
+        stops s1_1 
+            on s1_1.id=s1_0.stop_id 
+    where
+        s1_1.id=?
+Hibernate: 
+    select
+        distinct r1_0.id,
+        r1_0.maxNumberUsers,
+        r1_0.name,
+        r1_0.price,
+        r1_0.totalKm 
+    from
+        routes r1_0 
+    join
+        route_stops s1_0 
+            on r1_0.id=s1_0.route_id 
+    join
+        stops s1_1 
+            on s1_1.id=s1_0.stop_id 
+    where
+        s1_1.id=?
+Hibernate: 
+    select
+        distinct r1_0.id,
+        r1_0.maxNumberUsers,
+        r1_0.name,
+        r1_0.price,
+        r1_0.totalKm 
+    from
+        routes r1_0 
+    join
+        route_stops s1_0 
+            on r1_0.id=s1_0.route_id 
+    join
+        stops s1_1 
+            on s1_1.id=s1_0.stop_id 
+    where
+        s1_1.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="getMaxStopOfRoutesTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.171">
+    <system-out><![CDATA[Hibernate: 
+    select
+        max((select
+            count(1) 
+        from
+            route_stops s1_0 
+        where
+            r1_0.id=s1_0.route_id)) 
+    from
+        routes r1_0
+]]></system-out>
+  </testcase>
+  <testcase name="getTopNSuppliersInPurchasesTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.091">
+    <system-out><![CDATA[Hibernate: 
+    select
+        s2_0.id,
+        s2_0.authorizationNumber,
+        s2_0.businessName 
+    from
+        services s1_0 
+    join
+        item_services isl1_0 
+            on s1_0.id=isl1_0.service_id 
+    join
+        suppliers s2_0 
+            on s2_0.id=s1_0.supplier_id 
+    group by
+        s2_0.id 
+    order by
+        count(isl1_0.purchase_id) desc 
+    limit
+        ?
+Hibernate: 
+    select
+        s2_0.id,
+        s2_0.authorizationNumber,
+        s2_0.businessName 
+    from
+        services s1_0 
+    join
+        item_services isl1_0 
+            on s1_0.id=isl1_0.service_id 
+    join
+        suppliers s2_0 
+            on s2_0.id=s1_0.supplier_id 
+    group by
+        s2_0.id 
+    order by
+        count(isl1_0.purchase_id) desc 
+    limit
+        ?
+]]></system-out>
+  </testcase>
+  <testcase name="init" classname="unlp.info.bd2.ToursQuerysTests" time="0.011"/>
+  <testcase name="getUserSpendingMoreThanTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.057">
+    <system-out><![CDATA[Hibernate: 
+    select
+        distinct u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        purchases p1_0 
+    join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+    where
+        p1_0.totalPrice>=?
+Hibernate: 
+    select
+        distinct u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        purchases p1_0 
+    join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+    where
+        p1_0.totalPrice>=?
+Hibernate: 
+    select
+        distinct u1_0.id,
+        u1_0.user_type,
+        u1_0.active,
+        u1_0.birthdate,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.username,
+        u1_0.expedient,
+        u1_0.education 
+    from
+        purchases p1_0 
+    join
+        users u1_0 
+            on u1_0.id=p1_0.user_id 
+    where
+        p1_0.totalPrice>=?
+]]></system-out>
+  </testcase>
+  <testcase name="getMostDemandedServiceTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.031">
+    <system-out><![CDATA[Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.price,
+        s1_0.supplier_id 
+    from
+        item_services is1_0 
+    join
+        services s1_0 
+            on s1_0.id=is1_0.service_id 
+    group by
+        s1_0.id 
+    order by
+        sum(is1_0.quantity) desc 
+    limit
+        ?
+]]></system-out>
+  </testcase>
+  <testcase name="getTourGuidesWithRating1Test" classname="unlp.info.bd2.ToursQuerysTests" time="0.091">
+    <system-out><![CDATA[Hibernate: 
+    select
+        distinct tgl1_1.id,
+        tgl1_1.active,
+        tgl1_1.birthdate,
+        tgl1_1.email,
+        tgl1_1.name,
+        tgl1_1.password,
+        tgl1_1.phoneNumber,
+        tgl1_1.username,
+        tgl1_1.education 
+    from
+        routes r1_0 
+    join
+        route_tour_guides tgl1_0 
+            on r1_0.id=tgl1_0.route_id 
+    join
+        (select
+            * 
+        from
+            users t 
+        where
+            t.user_type='TOUR_GUIDE') tgl1_1 
+            on tgl1_1.id=tgl1_0.tour_guide_id, purchases p1_0 
+    join
+        reviews r3_0 
+            on p1_0.id=r3_0.purchase_id 
+    where
+        p1_0.route_id=r1_0.id 
+        and r3_0.rating=1
+]]></system-out>
+  </testcase>
+  <testcase name="getTop3RoutesWithMaxRatingTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.057">
+    <system-out><![CDATA[Hibernate: 
+    select
+        r1_0.id,
+        r1_0.maxNumberUsers,
+        r1_0.name,
+        r1_0.price,
+        r1_0.totalKm 
+    from
+        purchases p1_0 
+    join
+        routes r1_0 
+            on r1_0.id=p1_0.route_id 
+    join
+        reviews r2_0 
+            on p1_0.id=r2_0.purchase_id 
+    where
+        r2_0.id is not null 
+    group by
+        r1_0.id 
+    order by
+        avg(r2_0.rating) desc 
+    limit
+        ?
+]]></system-out>
+  </testcase>
+  <testcase name="getCountOfPurchasesBetweenDatesTest" classname="unlp.info.bd2.ToursQuerysTests" time="0.058">
+    <system-out><![CDATA[Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.date>=? 
+        and p1_0.date<=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.date>=? 
+        and p1_0.date<=?
+Hibernate: 
+    select
+        count(p1_0.id) 
+    from
+        purchases p1_0 
+    where
+        p1_0.date>=? 
+        and p1_0.date<=?
+]]></system-out>
+  </testcase>
+</testsuite>
