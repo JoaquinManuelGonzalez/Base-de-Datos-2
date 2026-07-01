@@ -1,0 +1,7 @@
+nos tomaron en 2025:
+1) persistencia por alcance
+2) LAZY y su uso
+3) dao vs repository
+4) redis
+5) estados hibernate
+6) cuadro
